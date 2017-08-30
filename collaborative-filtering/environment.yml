@@ -1,0 +1,9 @@
+name: collaborative-filtering
+dependencies:
+- jupyterlab
+- notebook
+- tensorflow>1.2
+- pandas
+# - keras>2
+- pip:
+  - papermill
