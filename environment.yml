@@ -4,6 +4,8 @@ dependencies:
 - notebook
 - tensorflow>1.2
 - pandas
-# - keras>2
+- h5py
+- requests
+- pillow
 - pip:
   - papermill
