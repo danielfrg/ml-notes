@@ -3,9 +3,12 @@ dependencies:
 - jupyterlab
 - notebook
 - tensorflow>1.2
+- requests
+- numpy
+- scipy
 - pandas
 - h5py
-- requests
 - pillow
 - pip:
   - papermill
+  - kaggle-cli
