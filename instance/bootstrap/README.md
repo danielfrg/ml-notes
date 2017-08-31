@@ -22,6 +22,6 @@ Execute:
 - `nvidia1.sh` - this will reboot the instance
 - `nvidia2.sh` - this will reboot the instance
 - `nvidia3.sh`
-- `cuda-toolkit.sh`
-- `cudnn.sh`  - this requires to create an account, download a file locally and upload to the instance
+- `cuda.sh`  - Cuda Toolkit 8.0
+- `cudnn.sh`  - This requires to create an account, download a file locally and upload to the instance
 - `cuda-prof-tools.sh`

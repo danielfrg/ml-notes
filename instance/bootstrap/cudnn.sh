@@ -3,7 +3,7 @@
 # Locally: Download CuDNN (needs an account) from:
 # https://developer.nvidia.com/cudnn
 # Move the file to the instance
-scp -i ~/.ssh/<keypair> ~/Downloads/cudnn-7.5-linux-x64-v5.1 ubuntu@gpu:.
+scp -i ~/.ssh/<keypair> ~/Downloads/cudnn-8.0-linux-x64-v6.0.tgz ubuntu@gpu:.
 
 # On the instance:
 tar -xzvf cudnn-*-linux-x64-*.tgz
