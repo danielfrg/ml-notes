@@ -30,6 +30,8 @@ def gen_sub_df(preds, filenames, clip=False, clip_range=(0.02, 0.98)):
     
     for lbl, idx in lbl_indices.items():
         df[lbl] = preds[:, idx]
+        if clip:
+            df[lbl] = np.clip(preds[:, idx], clip_range[0], clip_range[1])
     return df
 
 
