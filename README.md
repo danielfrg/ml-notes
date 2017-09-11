@@ -1,4 +1,4 @@
-Personal tools and notebooks for deep learning.
+Personal tools and notebooks for machine learning.
 
 
 ## Tensorflow
