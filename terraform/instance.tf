@@ -22,12 +22,6 @@ resource "aws_instance" "server" {
     volume_tags {
         Name = "${var.tagName}"
     }
-
-    # provisioner "remote-exec" {
-    #     scripts = [
-    #         "${path.module}/scripts/anaconda.sh",
-    #     ]
-    # }
 }
 
 

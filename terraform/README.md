@@ -1,4 +1,6 @@
-Terraform and bash scripts to create and bootstrap AWS P2 instances with GPU support
+Terraform and bash scripts to create and bootstrap AWS P2 instances with GPU support.
+
+Fill the `local.tf` and then `terraform apply`.
 
 ## AWS P2 Instance bootstrap
 
