@@ -1,0 +1,15 @@
+name: detectron
+channels:
+  - danielfrg 
+dependencies:
+  - python=2.7
+  - caffe2-cuda9.1-cudnn7
+  - numpy
+  - scipy
+  - cython
+  - matplotlib
+  - pyyaml
+  - jupyterlab
+  - nodejs
+  - pip:
+    - opencv-python
