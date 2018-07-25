@@ -1,10 +1,9 @@
 #!/bin/bash
 
-sudo mkdir -p /opt/anaconda
-wget https://repo.anaconda.com/archive/Anaconda3-5.0.1-Linux-x86_64.sh
-bash Anaconda*.sh -b -p /opt/anaconda
-rm Anaconda*.sh
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+sudo bash Miniconda*.sh -b -p /opt/anaconda/conda
 sudo chown -R ubuntu:ubuntu /opt/anaconda
+rm Miniconda*.sh
 
 echo 'export PATH=/opt/anaconda/bin:$PATH' >> ~/.bash_profile
 

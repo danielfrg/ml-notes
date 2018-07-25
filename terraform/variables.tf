@@ -1,12 +1,12 @@
 # Fill these variables in the local.tf
 
 # variable "key_name" {
-#   description = "SSH key name in your AWS account for AWS instances."
+#   description = "SSH key name in your AWS account for AWS instances"
 #   default = ""
 # }
 
 # variable "key_path" {
-#   description = "Path to the private key specified by key_name."
+#   description = "Path to the private key specified by key_name"
 #   default = ""
 # }
 
@@ -21,26 +21,29 @@ variable "username" {
 }
 
 variable "ami" {
-  default = "ami-41e0b93b"  # Base
+  default = "ami-5cc39523" # 18.04 Base
+
+  # default = "ami-41e0b93b" # 16.04 Base
+
   # default = ""  # Built AMI
 }
 
 variable "instance_type" {
-  default     = "p2.xlarge"
+  default = "p2.xlarge"
 }
 
 variable "tagName" {
-  default     = "gpu-test"
+  default = "daniel-gpu-test"
 }
 
 variable "volume_type" {
-  default     = "io1"
+  default = "io1"
 }
 
 variable "volume_size" {
-  default     = "1000"
+  default = "1000"
 }
 
 variable "iops" {
-  default     = "1000"
+  default = "1000"
 }

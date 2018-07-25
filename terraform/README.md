@@ -1,6 +1,6 @@
 Terraform and bash scripts to create and bootstrap AWS P2 instances with GPU support.
 
-Fill the `local.tf` and then `terraform apply`.
+Fill the `local.tf` and then `terraform init` and `terraform apply`.
 
 ## AWS P2 Instance bootstrap
 
@@ -21,11 +21,12 @@ Execute:
 ### NVIDIA, Cuda, cuddn
 
 Based on the [official docs](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/accelerated-computing-instances.html#install-nvidia-driver).
+ and [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-nvidia-driver.html).
 
 Execute:
 - `nvidia1.sh` - this will reboot the instance
 - `nvidia2.sh` - this will reboot the instance
-- `nvidia3.sh`
+- `nvidia3.sh` - this will reboot the instance
 - `cuda.sh` - Cuda Toolkit 8.0
 - `cudnn.sh` - This requires to create an account, download a file locally and upload to the instance
 - `cuda-prof-tools.sh`
