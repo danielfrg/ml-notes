@@ -3,9 +3,9 @@
 # Driver install
 # Based on: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-nvidia-driver.html
 
-sudo apt-get install -y gcc linux-headers-$(uname -r)
+sudo apt install -y build-essential linux-headers-$(uname -r)
 
-cat << EOF | sudo tee --append /etc/modprobe.d/blacklist-nvida.conf
+cat << EOF | sudo tee --append /etc/modprobe.d/blacklist-nvidia.conf
 blacklist vga16fb
 blacklist nouveau
 blacklist rivafb

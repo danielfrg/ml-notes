@@ -4,9 +4,13 @@
 # Based on: https://docs.nvidia.com/cuda/cuda-installation-guide-linux
 # Download from: https://developer.nvidia.com/cuda-downloads
 
-# CUDA Toolkit
-wget https://developer.nvidia.com/compute/cuda/9.2/Prod2/local_installers/cuda_9.2.148_396.37_linux
-sudo bash cuda_*_linux --silent --driver --toolkit
+sudo apt install linux-source
+sudo apt source linux-image-$(uname -r)
+sudo apt install linux-headers-$(uname -r)
+
+# CUDA Toolkit: 9.0 for tensorflow 1.9
+wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda_9.0.176_384.81_linux-run
+sudo bash cuda_*_linux-run --override --silent --toolkit
 rm -rf cuda_*_linux
 
 echo 'export PATH=/usr/local/cuda/bin:$PATH' >> ~/.bash_profile

@@ -4,7 +4,7 @@
 # Based on: https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html
 
 # Locally
-# Download CuDNN (needs an account) from: https://developer.nvidia.com/cudnn
+# Download CuDNN 7.1.4 for Cuda 9.0 (tensorflow 1.9) from (needs an account): https://developer.nvidia.com/cudnn
 # Move the file to the instance
 scp -i $KEYPAIR ~/Downloads/cudnn-9.2-linux-x64-v7.1.tgz ubuntu@gpu:.
 
